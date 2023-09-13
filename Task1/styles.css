@@ -1,0 +1,118 @@
+
+#chocolate-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.chocolate {
+    width: calc(25% - 10px); 
+    margin-bottom: 20px; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.chocolate:hover {
+    transform: scale(1.05);
+}
+
+.chocolate h1 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.chocolate img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px; 
+}
+
+.cart button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#selected-chocolates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.selected-chocolate {
+    width: calc(25% - 10px); 
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.selected-chocolate h1 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.selected-chocolate img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px; 
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    #chocolate-options {
+        justify-content: center;
+    }
+
+    .chocolate {
+        width: calc(33.33% - 10px);
+    }
+
+    #selected-chocolates {
+        justify-content: center;
+    }
+
+    .selected-chocolate {
+        width: calc(33.33% - 10px);
+    }
+}
+
+#cart-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#cart-button-container button {
+    padding: 10px 20px;
+    background-color: #f44336; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#cart-button-container button:hover {
+    background-color: #d32f2f; 
+}
+
+#custom-pack {
+    margin-bottom: 20px; 
+    padding: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+#chocolate-options {
+    padding: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
